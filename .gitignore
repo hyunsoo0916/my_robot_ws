@@ -1,0 +1,7 @@
+build/
+install/
+log/
+*.pyc
+__pycache__/
+src/turtlebot3/
+src/turtlebot3/
