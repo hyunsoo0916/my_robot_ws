@@ -6,7 +6,7 @@ package_name = 'my_robot'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='0.1.0',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -19,12 +19,13 @@ setup(
     zip_safe=True,
     maintainer='hyunsoo',
     maintainer_email='hyunsoo@todo.todo',
-    description='My TurtleBot3 URDF test package',
+    description='My TurtleBot3 + Nav2 helper package',
     license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
-    'console_scripts': [
-        'sensor_fusion_node = my_robot.sensor_fusion_node:main',
+        'console_scripts': [
+            'goal_bridge = my_robot.goal_bridge:main',
+            'nav2_go = my_robot.nav2_go:main',
         ],
-    }
+    },
 )
